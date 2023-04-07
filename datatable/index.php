@@ -14,9 +14,6 @@
   
 </head>
 <body>
-<?php
-include 'check_loggedin.php';
-?>
 
   <div class="jumbotron text-center">
     <h1>04-07 APR. 2023</h1>
@@ -28,7 +25,7 @@ include 'check_loggedin.php';
       <li><a href="index.php">หน้าแรก</a></li>
       <li><a href="match.php">ตารางการแข่งขัน</a></li>
       <li><a href="dataTable.php">รายชื่อนักกีฬา</a></li>
-      <li><a href="admin.php">Admin Page</a></li>
+      <li><a href="admin/admin.php">Admin Page</a></li>
     </ul>
 
     <div class="row">

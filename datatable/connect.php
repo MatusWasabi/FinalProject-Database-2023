@@ -4,8 +4,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 
-define('SITEURL', 'http://localhost/FinalProject/datatable/');
-
+session_start();
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=data_db", $username, $password);

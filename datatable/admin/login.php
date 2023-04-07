@@ -32,12 +32,6 @@
 					name="login" value="Sign In">
 		</div>
 	</form>
-
 </body>
 
 </html>
-
-
-
-
-

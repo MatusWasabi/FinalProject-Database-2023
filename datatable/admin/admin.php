@@ -1,11 +1,3 @@
-<?php
-  include 'check_loggedin.php';
-
-  if(isset($_SESSION['loggedin'])){
-    echo "You should not be here!";
-    header('location: login.php');
-  }
-?>
 
 <!DOCTYPE html>
 <html lang="eng">
@@ -29,9 +21,9 @@
   <div class="container">
 
     <ul class="list-inline">
-      <li><a href="index.php">หน้าแรก</a></li>
-      <li><a href="match.php">ตารางการแข่งขัน</a></li>
-      <li><a href="dataTable.php">รายชื่อนักกีฬา</a></li>
+      <li><a href="../index.php">หน้าแรก</a></li>
+      <li><a href="../match.php">ตารางการแข่งขัน</a></li>
+      <li><a href="../dataTable.php">รายชื่อนักกีฬา</a></li>
       <li><a href="admin.php">Admin Page</a></li>
     </ul>
 
@@ -54,8 +46,11 @@
         <tbody>
           <?php
 
-            require_once 'connect.php';
-            
+            require_once '../connect.php';
+
+            if(!(isset($_SESSION['username']))) {header("location: login.php");}
+
+
             $stmt = $conn->query("SELECT * FROM `users`");
             $stmt->execute();
 
@@ -101,7 +96,7 @@
           <?php
           
 
-            require_once 'connect.php';
+          require_once '../connect.php';
             
             $stmt = $conn->query("SELECT * FROM `match_day`");
             $stmt->execute();
@@ -147,7 +142,7 @@
         <tbody>
           <?php
 
-            require_once 'connect.php';
+require_once '../connect.php';
             
             $stmt = $conn->query("SELECT * FROM `team_medal`");
             $stmt->execute();
