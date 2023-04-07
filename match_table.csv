@@ -1,0 +1,13 @@
+﻿matchid,first_team,second_team,sport_type,day,start_time,round,result
+,Blue,Green,Basketball,2023-04-04,9:00:00,รองแรก,Green
+,Green,Yellow,Football,2023-04-04,13:00:00,รองแรก,Yellow
+,Red,Yellow,Volleyball,2023-04-04,9:00:00,รองแรก,Red
+,Red,Yellow,Basketball,2023-04-05,13:00:00,รองแรก,Red
+,Blue,Green,Volleyball,2023-04-05,13:00:00,รองแรก,Blue
+,Red,Blue,Football,2023-04-05,9:00:00,รองแรก,Red
+,Green,Yellow,Volleyball,2023-04-06,9:00:00,รองชนะเลิศ,Yellow
+,Blue,Yellow,Basketball,2023-04-06,9:00:00,รองชนะเลิศ,Yellow
+,Blue,Green,Football,2023-04-06,13:00:00,รองชนะเลิศ,Green
+,Red,Green,Basketball,2023-04-07,9:00:00,ชิงชนะเลิศ,Red
+,Red,Blue,Volleyball,2023-04-07,9:00:00,ชิงชนะเลิศ,Blue
+,Red,Yellow,Football,2023-04-07,13:00:00,ชิงชนะเลิศ,Red
