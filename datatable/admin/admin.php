@@ -25,6 +25,7 @@
       <li><a href="../match.php">ตารางการแข่งขัน</a></li>
       <li><a href="../dataTable.php">รายชื่อนักกีฬา</a></li>
       <li><a href="admin.php">Admin Page</a></li>
+      <li><a href="logout.php">Logout</a></li>
     </ul>
 
     <div class="row">
