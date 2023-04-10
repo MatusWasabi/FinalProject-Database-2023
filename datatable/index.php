@@ -31,14 +31,6 @@
 
     </div>
 
-
-  <!--<div class="container">
-    <ul class="list-inline">
-      <li><a href="index.php" class="active">หน้าแรก</a></li>
-      <li><a href="match.php">ตารางการแข่งขัน</a></li>
-      <li><a href="dataTable.php">รายชื่อนักกีฬา</a></li>
-      <li><a href="admin/admin.php">Admin Page</a></li>
-    </ul>-->
     
     <div class="container" style="padding-top: 40px;">
     <div class="row">
@@ -55,19 +47,6 @@
             </tr>
           </thead>
 
-    <!--<div class="row">
-      <div class="col-md-12"> <br>
-        <h3 class="mt-4">เหรียญรางวัล</h3>
-        <table id="myTable" class="table table-hover table-responsive table-bordered">
-          <thead>
-            <tr>
-              <th width="20%">ทีม</th>
-              <th width="30%">เหรียญทอง</th>
-              <th width="30%">เหรียญเงิน</th>
-              <th width="30%">เหรียญทองแดง</th>
-              <th width="30%">ทั้งหมด</th>
-            </tr>
-          </thead>-->
         <tbody>
           <?php
 

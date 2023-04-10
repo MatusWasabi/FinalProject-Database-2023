@@ -12,9 +12,7 @@
 </head>
 
 <body>
-  <?php
-  include 'check_loggedin.php';
-  ?>
+
 
   <div class="hero">
     <div class="container" style="max-width: 1000px; margin-left: auto; margin-right: auto; :padding-left: 1rem; padding-right: 1rem;"></div>
@@ -35,30 +33,11 @@
 
   </div>
 
-
-   <!--<ul class="list-inline">
-      <li><a href="index.php">Home</a></li>
-      <li><a href="match.php">Schedule</a></li>
-      <li><a href="dataTable.php" class="active">List of Athletes</a></li>
-      <li><a href="admin/admin.php">Admin Page</a></li>
-    </ul>-->
-
     <div class="container" style="padding-top: 40px;">
     <div class="row" >
       <div class="col-md-12"> <br>
         <h3 class="mt-4">List of Athletes</h3>
-        <!-- <table id="myTable" class="table table-hover table-responsive table-bordered" > -->
-        <!-- <table id="myTable">
-          <thead>
-            <tr>
-              <th width="5%">ID</th>
-              <th width="10%">คำนำหน้า</th>
-              <th width="35%">ชื่อ</th>
-              <th width="40%">นามสกุล</th>
-              <th width="10%">ทีมสี</th>
-              <th width="10%">กีฬา</th>
-            </tr>
-          </thead>-->
+
     
         
         <table id="myTable" class="table table-striped table-hover border">

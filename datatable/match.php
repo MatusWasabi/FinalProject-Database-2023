@@ -12,9 +12,6 @@
   
 </head>
 <body>
-<?php
-include 'check_loggedin.php';
-?>
 
 <div class="hero">
       <div class="container" style="max-width: 1000px; margin-left: auto; margin-right: auto; :padding-left: 1rem; padding-right: 1rem;"></div>

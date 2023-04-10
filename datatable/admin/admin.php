@@ -20,10 +20,10 @@
           z-index: 100;">
           <h2 class="logo" style="font-size: 2em; color: rgb(0, 138, 92);">Sport</h2>
           <ul class="list-inline">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="match.php">Schedule</a></li>
-            <li><a href="dataTable.php">List of Athletes</a></li>
-            <li><a href="admin/admin.php" class="active">Admin Page</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../match.php">Schedule</a></li>
+            <li><a href="../dataTable.php">List of Athletes</a></li>
+            <li><a href="admin.php" class="active">Admin Page</a></li>
           </ul>
         </header>
 

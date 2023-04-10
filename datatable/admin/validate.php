@@ -34,25 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	}  
   
 
-	/*
-	$stmt = $conn->prepare("SELECT * FROM tbl_admin");
-	$stmt->execute();
-	$users = $stmt->fetchAll();
-	
-	foreach($users as $user) {
-		
-		if(($user['username'] == $username) &&
-			($user['password'] == $password)) {
-				header("location: admin.php");
-                $_SESSION['username'] = $username;
-		}
-		else {
-			echo "<script language='javascript'>";
-			echo "alert('WRONG INFORMATION')";
-			echo "</script>";
-			die();
-		}
-	}*/
 }
 
 ?>
