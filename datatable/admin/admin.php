@@ -18,7 +18,6 @@
       <div class="container" style="max-width: 1000px; margin-left: auto; margin-right: auto; :padding-left: 1rem; padding-right: 1rem;"></div>
         <header style="top: 0; left: 0; width: 100%; padding: 30px 100px; position: absolute; display: flex; justify-content: space-between; align-items: center;
           z-index: 100;">
-          <h2 class="logo" style="font-size: 2em; color: rgb(0, 138, 92);">Sport</h2>
           <ul class="list-inline">
             <li><a href="../index.php">Home</a></li>
             <li><a href="../match.php">Schedule</a></li>
@@ -28,15 +27,11 @@
           </ul>
         </header>
 
-        <div class= "titleWeb" style="bottom: 40px; top: 50px;">
-          <h1 id="text">Inter-Colour Sports Competition</h1>
-        </div>
 
     </div>
     <div class="container" style="padding-top: 40px;">
     <div class="row">
       <div class="col-md-12"> <br>
-        <h3 class="mt-4">List of Athletes</h3>
         <table id="myTable" class="table table-striped table-hover border">
           <thead class="table-gray-900">
             <tr>
@@ -57,10 +52,10 @@
 
             if(!(isset($_SESSION['username']))) {header("location: login.php");}
 
-
             $stmt = $conn->query("SELECT * FROM `users`");
             $stmt->execute();
 
+          
             $users = $stmt->fetchAll();
             foreach($users as $user) {
           

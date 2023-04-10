@@ -51,7 +51,7 @@
         <tbody>
           <?php
 
-require_once '../connect.php';
+require_once 'connect.php';
             
             $stmt = $conn->query("SELECT * FROM `team_medal`");
             $stmt->execute();
