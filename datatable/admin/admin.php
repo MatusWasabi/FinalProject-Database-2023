@@ -15,23 +15,29 @@
 <body>
 
 <div class="hero">
-      <div class="container" style="max-width: 1000px; margin-left: auto; margin-right: auto; :padding-left: 1rem; padding-right: 1rem;"></div>
+        <div class="container" style="max-width: 1000px; margin-left: auto; margin-right: auto; :padding-left: 1rem; padding-right: 1rem;"></div>
         <header style="top: 0; left: 0; width: 100%; padding: 30px 100px; position: absolute; display: flex; justify-content: space-between; align-items: center;
           z-index: 100;">
+          <h2 class="logo" style="font-size: 2em; color: rgb(0, 138, 92);">Sport</h2>
           <ul class="list-inline">
             <li><a href="../index.php">Home</a></li>
             <li><a href="../match.php">Schedule</a></li>
             <li><a href="../dataTable.php">List of Athletes</a></li>
-            <li><a href="admin.php" class="active">Admin Page</a></li>
-            <li><a href="logout.php" class="active">Log Out</a></li>
+            <li><a href="admin/admin.php">Admin Page</a></li>
+            <li><a href="logout.php">Log Out</a></li>
           </ul>
         </header>
 
+        <div class= "titleWeb" style="bottom: 40px; top: 50px;">
+          <h1 id="text">Inter-Colour Sports Competition</h1>
+        </div>
+    </div>
 
     </div>
     <div class="container" style="padding-top: 40px;">
     <div class="row">
-      <div class="col-md-12"> <br>
+      <div class="col-md-12">
+      <h3 class="mt-4">รายชื่อนักกีฬา <a href="../formAdd.php" class="btn btn-info">+เพิ่มข้อมูล</a></h3>
         <table id="myTable" class="table table-striped table-hover border">
           <thead class="table-gray-900">
             <tr>
@@ -67,8 +73,8 @@
               <td><?php echo $user['lastname'] ?></td>
               <td><?php echo $user['color'] ?></td>
               <td><?php echo $user['sport'] ?></td>
-              <td><a href="formEdit.php?id=<?php echo $user['id']; ?>" class="btn btn-warning btn-sm">แก้ไข</a></td>
-              <td><a href="del.php?id=<?php echo $user['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('ยืนยันการลบข้อมูล !!');">ลบ</a></td>
+              <td><a href="../formEdit.php?id=<?php echo $user['id']; ?>" class="btn btn-warning btn-sm">แก้ไข</a></td>
+              <td><a href="../del.php?id=<?php echo $user['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('ยืนยันการลบข้อมูล !!');">ลบ</a></td>
             </tr>
           <?php
           }
@@ -78,7 +84,7 @@
       </div>
 
       <div class="col-md-12"> <br>
-        <h3 class="mt-4">ตารางการแข่งขัน <a href="formAddMatch.php" class="btn btn-info">+เพิ่มข้อมูล</a></h3>
+        <h3 class="mt-4">ตารางการแข่งขัน <a href="../formAddMatch.php" class="btn btn-info">+เพิ่มข้อมูล</a></h3>
         <table id="myTable2" class="table table-hover table-responsive table-bordered">
           <thead>
             <tr>
@@ -116,8 +122,8 @@
               <td><?php echo $team['start_time'] ?></td>
               <td><?php echo $team['round'] ?></td>
               <td><?php echo $team['result'] ?></td>
-              <td><a href="formEditMatch.php?matchid=<?php echo $team['matchid']; ?>" class="btn btn-warning btn-sm">แก้ไข</a></td>
-              <td><a href="delMatch.php?matchid=<?php echo $team['matchid']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('ยืนยันการลบข้อมูล !!');">ลบ</a></td>
+              <td><a href="../formEditMatch.php?matchid=<?php echo $team['matchid']; ?>" class="btn btn-warning btn-sm">แก้ไข</a></td>
+              <td><a href="../delMatch.php?matchid=<?php echo $team['matchid']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('ยืนยันการลบข้อมูล !!');">ลบ</a></td>
             </tr>
           <?php
           }
@@ -127,7 +133,7 @@
       </div>
 
       <div class="col-md-12"> <br>
-        <h3 class="mt-4">เหรียญรางวัล <a href="formAddMedal.php" class="btn btn-info">+เพิ่มข้อมูล</a></h3>
+        <h3 class="mt-4">เหรียญรางวัล <a href="../formAddMedal.php" class="btn btn-info">+เพิ่มข้อมูล</a></h3>
         <table id="myTable4" class="table table-hover table-responsive table-bordered">
           <thead>
             <tr>
@@ -160,8 +166,8 @@ require_once '../connect.php';
               <td><?php echo $team['medal_silver'] ?></td>
               <td><?php echo $team['medal_bronze'] ?></td>
               <td><?php echo $team['medal_total'] ?></td>
-              <td><a href="formEditMedal.php?teamid=<?php echo $team['teamid']; ?>" class="btn btn-warning btn-sm">แก้ไข</a></td>
-              <td><a href="delMedal.php?teamid=<?php echo $team['teamid']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('ยืนยันการลบข้อมูล !!');">ลบ</a></td>
+              <td><a href="../formEditMedal.php?teamid=<?php echo $team['teamid']; ?>" class="btn btn-warning btn-sm">แก้ไข</a></td>
+              <td><a href="../delMedal.php?teamid=<?php echo $team['teamid']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('ยืนยันการลบข้อมูล !!');">ลบ</a></td>
             </tr>
           <?php
           }
@@ -177,7 +183,7 @@ require_once '../connect.php';
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
   <script>
     $(document).ready( function () {
-      $('#myTable1').DataTable();
+      $('#myTable').DataTable();
     } );
   </script>
   <script>

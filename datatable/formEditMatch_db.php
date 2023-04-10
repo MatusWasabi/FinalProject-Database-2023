@@ -36,7 +36,7 @@ $stmt->execute();
                   title: "แก้ไขข้อมูลสำเร็จ",
                   type: "success"
               }, function() {
-                  window.location = "admin.php";
+                  window.location = "admin/admin.php";
               });
             }, 1000);
         </script>';
@@ -47,7 +47,7 @@ $stmt->execute();
                   title: "เกิดข้อผิดพลาด",
                   type: "error"
               }, function() {
-                  window.location = "admin.php"; 
+                  window.location = "admin/admin.php"; 
               });
             }, 1000);
         </script>';

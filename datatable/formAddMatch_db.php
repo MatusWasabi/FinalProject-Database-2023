@@ -35,7 +35,7 @@
                   title: "เพิ่มข้อมูลสำเร็จ",
                   type: "success"
               }, function() {
-                  window.location = "admin.php";
+                  window.location = "admin/admin.php";
               });
             }, 1000);
         </script>';
@@ -46,7 +46,7 @@
                   title: "เกิดข้อผิดพลาด",
                   type: "error"
               }, function() {
-                  window.location = "admin.php"; 
+                  window.location = "admin/admin.php"; 
               });
             }, 1000);
         </script>';
