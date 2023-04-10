@@ -24,6 +24,7 @@
             <li><a href="../match.php">Schedule</a></li>
             <li><a href="../dataTable.php">List of Athletes</a></li>
             <li><a href="admin.php" class="active">Admin Page</a></li>
+            <li><a href="logout.php" class="active">Log Out</a></li>
           </ul>
         </header>
 

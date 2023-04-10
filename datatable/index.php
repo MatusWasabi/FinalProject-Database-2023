@@ -13,6 +13,7 @@
 </head>
 <body>
   <div class="hero">
+    
       <div class="container" style="max-width: 1000px; margin-left: auto; margin-right: auto; :padding-left: 1rem; padding-right: 1rem;"></div>
         <header style="top: 0; left: 0; width: 100%; padding: 30px 100px; position: absolute; display: flex; justify-content: space-between; align-items: center;
           z-index: 100;">
@@ -50,7 +51,7 @@
         <tbody>
           <?php
 
-            require_once 'connect.php';
+require_once '../connect.php';
             
             $stmt = $conn->query("SELECT * FROM `team_medal`");
             $stmt->execute();
