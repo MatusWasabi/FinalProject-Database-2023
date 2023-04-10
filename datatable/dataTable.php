@@ -65,11 +65,11 @@
           <thead class="table-gray-900">
             <tr>
               <th width="5%">ID</th>
-              <th width="10%">คำนำหน้า</th>
-              <th width="35%">ชื่อ</th>
-              <th width="40%">นามสกุล</th>
-              <th width="10%">ทีมสี</th>
-              <th width="10%">กีฬา</th>
+              <th width="10%">Prefixes</th>
+              <th width="35%">Name</th>
+              <th width="40%">Surname</th>
+              <th width="10%">Team</th>
+              <th width="10%">Sport</th>
             </tr>
           </thead>
           <tbody>
